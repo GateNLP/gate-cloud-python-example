@@ -25,6 +25,12 @@ When successful, the script will
 print a formatted version of the JSON result it obtains from the GATE Cloud web service; and,
 the parts of the text that correspond to annotations that ANNIE found.
 
+The above example will output some JSON that only a web programmer can love, followed by:
+
+    Date : 1450
+    Location : Brabant
+    Person : Hieronymus Bosch
+
 ## Quota
 
 GATE Cloud has a quota for API calls; if you use an API key quota is increased.
