@@ -47,10 +47,3 @@ for annotation_type, annotations in gate_json['entities'].items():
         i, j = annotation["indices"]
         print(annotation_type, ":", response_text[i:j])
 
-
-# or twitie
-
-# HTTP Basic authentication
-# Content-Type
-# Accept
-# Expect: 100?
