@@ -8,6 +8,8 @@ If you just want to see the code, it's [`annie.py`](blob/master/annie.py).
 To run the code you'll need
 Python 3 and the [`requests` library](https://pypi.org/project/requests/).
 
+## Install using `conda`
+
 If you have `conda`,
 you can create a new environment with Python 3 and `requests` like this:
 
@@ -16,6 +18,15 @@ you can create a new environment with Python 3 and `requests` like this:
 activate it:
 
     conda activate gate-cloud-example
+
+## Install using `pip`
+
+If you already use Python and `pip` then, as an alternative to using `conda`,
+you can install the dependencies using:
+
+    pip install -r requirements.txt
+
+## Running it
 
 Run the script:
 
