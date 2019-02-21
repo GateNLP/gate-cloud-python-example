@@ -2,6 +2,9 @@
 
 # Using the GATE Cloud on-line API:
 # An example using ANNIE.
+#
+# This is a command line tool, example use:
+#   python annie.py Greta Thunberg spoke yesterday at the UN
 
 # REFERENCES
 #
