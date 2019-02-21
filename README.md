@@ -56,19 +56,9 @@ So put them in like this:
     password 9u8ki81lstfc2z8qjlae
 
 
-###
+## GATE Cloud documentation
 
-Refer to documentation here: https://cloud.gate.ac.uk/info/help/online-api.html
+The GATE Cloud API documention is here: https://cloud.gate.ac.uk/info/help/online-api.html
 
-and api browser here:
-https://cloud.gate.ac.uk/shopfront/displayItem/annie-named-entity-recognizer?fromApi=1
-
-requests make this really easy
-Need to set content-type
-
-
-or twitie
-
-Accept
-Expect: 100?
-
+The API description page for ANNIE is here:
+https://cloud.gate.ac.uk/shopfront/displayItem/annie-named-entity-recognizer
