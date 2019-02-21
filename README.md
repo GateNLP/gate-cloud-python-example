@@ -1,4 +1,4 @@
-# Gate Cloud API Python Example
+# GATE Cloud API Python Example
 
 This is a brief example of using the GATE Cloud on-line API
 using the `requests` library in Python.
