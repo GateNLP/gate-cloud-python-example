@@ -30,6 +30,8 @@ service = "process-document/annie-named-entity-recognizer"
 url = urllib.parse.urljoin(prefix, service)
 
 def main():
+    if len(sys.argv) <= 1:
+        return usage()
     # Create the text from the arguments
     text = " ".join(sys.argv[1:])
     headers = {'Content-Type': 'text/plain'}
@@ -50,6 +52,11 @@ def main():
         for annotation in annotations:
             i, j = annotation["indices"]
             print(annotation_type, ":", response_text[i:j])
+
+def usage():
+    print("""annie.py: send text to GATE Cloud ANNIE service. Example usage:
+python annie.py Serena Williams won against Angelique Kerber in Australia in 2017""",
+file=sys.stderr)
 
 if __name__ == "__main__":
     main()
