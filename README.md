@@ -25,6 +25,18 @@ When successful, the script will
 print a formatted version of the JSON result it obtains from the GATE Cloud web service; and,
 the parts of the text that correspond to annotations that ANNIE found.
 
+## Quota
+
+GATE Cloud has a quota for API calls; if you use an API key quota is increased.
+
+The `requests` library with use credentials in your `.netrc` file.
+So put them in like this:
+
+    machine cloud-api.gate.ac.uk
+    login 71rs93h36m0c
+    password 9u8ki81lstfc2z8qjlae
+
+
 ###
 
 Refer to documentation here: https://cloud.gate.ac.uk/info/help/online-api.html
