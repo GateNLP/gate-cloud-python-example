@@ -3,7 +3,7 @@
 This is a brief example of using the GATE Cloud on-line API
 using the `requests` library in Python.
 
-If you just want to see the code, it's [`annie.py`](blob/master/annie.py)`
+If you just want to see the code, it's [`annie.py`](blob/master/annie.py).
 
 To run the code you'll need
 Python 3 and the [`requests` library](https://pypi.org/project/requests/).
