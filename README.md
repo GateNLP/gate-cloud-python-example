@@ -1,3 +1,32 @@
+# Gate Cloud API Python Example
+
+This is a brief example of using the GATE Cloud on-line API
+using the `requests` library in Python.
+
+If you just want to see the code, it's `[annie.py](blob/main/annie.py)`.
+
+To run the code you'll need
+Python 3 and the [`requests` library](https://pypi.org/project/requests/).
+
+If you have `conda`,
+you can create a new environment with Python 3 and `requests` like this:
+
+    conda create --name gate-cloud-example python=3 requests
+
+activate it:
+
+    conda activate gate-cloud-example
+
+Run the script:
+
+    python annie.py Hieronymus Bosch was a Dutch painter from Brabant, born in 1450
+
+When successful, the script will
+print a formatted version of the JSON result it obtains from the GATE Cloud web service; and,
+the parts of the text that correspond to annotations that ANNIE found.
+
+###
+
 Refer to documentation here: https://cloud.gate.ac.uk/info/help/online-api.html
 
 and api browser here:
