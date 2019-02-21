@@ -45,6 +45,8 @@ The above example will output some JSON that only a web programmer can love, fol
 ## Quota
 
 GATE Cloud has a quota for API calls; if you use an API key quota is increased.
+You can generate new API keys by logging into your GATE Cloud account,
+and visiting the [API Key page](https://cloud.gate.ac.uk/yourAccount/apiKeys).
 
 The `requests` library will use credentials in your [`.netrc`](https://ec.haxx.se/usingcurl-netrc.html) file.
 So put them in like this:
