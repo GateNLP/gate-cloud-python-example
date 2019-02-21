@@ -26,24 +26,27 @@ prefix = "https://cloud-api.gate.ac.uk/"
 service = "process-document/annie-named-entity-recognizer"
 url = urllib.parse.urljoin(prefix, service)
 
-# Sample text
-text = "David Jones joined The University of Sheffield earlier this year."
-headers = {'Content-Type': 'text/plain'}
+def main():
+    # Create the text from the arguments
+    text = " ".join(sys.argv[1:])
+    headers = {'Content-Type': 'text/plain'}
 
-# Make the API request and raise error if status >= 4xx
-response = requests.post(url, data=text, headers=headers)
-response.raise_for_status()
+    # Make the API request and raise error if status >= 4xx
+    response = requests.post(url, data=text, headers=headers)
+    response.raise_for_status()
 
-# The requests library has a method for returning parsed JSON
-gate_json = response.json()
+    # The requests library has a method for returning parsed JSON
+    gate_json = response.json()
 
-# Pretty print the response, mostly for debugging
-print(json.dumps(gate_json, indent=2))
+    # Pretty print the response, mostly for debugging
+    print(json.dumps(gate_json, indent=2))
 
-# Find each annotation and print its type and the text it is annotating
-response_text = gate_json["text"]
-for annotation_type, annotations in gate_json['entities'].items():
-    for annotation in annotations:
-        i, j = annotation["indices"]
-        print(annotation_type, ":", response_text[i:j])
+    # Find each annotation and print its type and the text it is annotating
+    response_text = gate_json["text"]
+    for annotation_type, annotations in gate_json['entities'].items():
+        for annotation in annotations:
+            i, j = annotation["indices"]
+            print(annotation_type, ":", response_text[i:j])
 
+if __name__ == "__main__":
+    main()
